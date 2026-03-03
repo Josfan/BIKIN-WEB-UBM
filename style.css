@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* HEADER ANIMATION */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 200px 0 200px;
+    padding: 20px 0;
+    animation: fadeDown 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.blue{
+    background-color: #034EA1;
+}
+
+.kanan{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.kelompok{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bahasa{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MENU HOVER ANIMATION */
+.kuning{
+    background-color: #F8A519;
+    padding: 10px 20px;
+}
+
+.bawah{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bawah div{
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.bawah div::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #034EA1;
+    transition: 0.3s ease;
+}
+
+.bawah div:hover::after{
+    width: 100%;
+}
+
+/* HERO ZOOM */
+.hero{
+    animation: zoomHero 8s ease-in-out infinite alternate;
+}
+
+@keyframes zoomHero{
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+/* SECTION TITLE */
+.mengapa{
+    background-color: #034EA1;
+    padding: 80px 70px;
+    margin-top: -10px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+/* SCROLL REVEAL BASE */
+.akreditas, .akreditas1, .card{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.8s ease;
+}
+
+/* CONTENT SECTIONS */
+.akreditas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 100px;
+}
+
+.akreditas1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-top: 50px;
+    background-color: #ececec;
+    padding: 50px 0;
+}
+
+.tombol{
+    text-align: right;
+}
+
+.akre{
+    font-size: 40px;
+    color: #034EA1;
+    font-weight: bold;
+}
+
+.text{
+    color: black;
+    width: 300px;
+    text-align: right;
+}
+
+.text1{
+    color: black;
+    width: 600px;
+    text-align: right;
+}
+
+.text2{
+    font-size: 40px;
+    font-weight: bold;
+    color:#034EA1;
+}
+
+.text3{
+    font-size: 35px;
+    font-weight: bold;
+    color:#F8A519;
+}
+
+/* BUTTON ANIMATION */
+button{
+    background-color: #0088CC;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #F8A519;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* IMAGE STYLE */
+.gambar1{
+    border-radius: 25px;
+}
+
+/* BERITA */
+.berita{
+    background-color:#F8A519;
+    padding: 80px 70px;
+    margin-top: -10px;
+}
+
+.brita{
+    display: flex;
+    padding: 35px 15px 0 15px;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* CARD HOVER */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    transition: 0.4s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.gamb{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+.card:hover .gamb{
+    transform: scale(1.05);
+}
+
+.tex{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: black;
+    width: 300px;
+}
+
+.butto{
+    text-align: center;
+}
+
+.butt{
+    background-color: #0088CC;
+    border-radius: 25px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #292B33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 200px;
+    font-size: small;
+}
+
+.foot1 a{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+.a:hover{
+    text-decoration: underline;
+    color: #0560c7;
+}
+
+.foot2 .foot3{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.foot2-1, .foot3-1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer1{
+    margin-top: 1px;
+    padding-top: 30px;
+    min-height: 33px;
+    background-color: #292B33;
+}
+
+.allright{
+    font-size: small;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
